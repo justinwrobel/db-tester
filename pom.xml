@@ -1,9 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.laur</groupId>
-	<artifactId>db-tester</artifactId>
-	<version>0.0.2</version>
+	<groupId>co.wrob</groupId>
+	<artifactId>dbt</artifactId>
+	<name>Database tester</name>
+	<version>0.0.3</version>
 
 	<distributionManagement>
 		<repository>
@@ -150,6 +151,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -188,7 +190,7 @@
 							<transformers>
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>com.laur.DbTesterApplication</mainClass>
+									<mainClass>co.wrob.DbTesterApplication</mainClass>
 								</transformer>
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">

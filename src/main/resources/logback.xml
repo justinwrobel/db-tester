@@ -47,8 +47,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.laur" level="${dbt.logging:-INFO}" />
-	<logger name="biz.paluch" level="trace" />
+	<logger name="co.wrob" level="${dbt.logging:-INFO}" />
 
 	<root level="WARN">
 		<appender-ref ref="GELF" />

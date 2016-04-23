@@ -9,3 +9,4 @@ target
 /catalina.home_IS_UNDEFINED/
 pom.xml.versionsBackup
 dependency-reduced-pom.xml
+/dbt.properties

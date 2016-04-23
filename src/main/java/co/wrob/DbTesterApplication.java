@@ -1,4 +1,4 @@
-package com.laur;
+package co.wrob;
 
 import java.io.File;
 import java.io.IOException;
@@ -32,7 +32,6 @@ public class DbTesterApplication {
 	 */
 	public static void main(String[] args) {
 		try {
-
 			log.debug("Starting");
 			
 			printVersion();
@@ -81,12 +80,16 @@ public class DbTesterApplication {
 	}
 
 	private static void printVersion() throws IOException {
-		Properties prop = new Properties();
-		InputStream in = DbTesterApplication.class.getResourceAsStream("/META-INF/maven/com.laur/db-tester/pom.properties");
-		prop.load(in);
-		in.close();
-		
-		log.debug("Version: {}",prop.get("version"));
+		try{
+			Properties prop = new Properties();
+			InputStream in = DbTesterApplication.class.getResourceAsStream("/META-INF/maven/co.wrob/db-tester/pom.properties");
+			prop.load(in);
+			in.close();
+			log.debug("Version: {}",prop.get("version"));
+			
+		}catch(NullPointerException e){
+			log.debug("no version");
+		}
 	}
 
 }
