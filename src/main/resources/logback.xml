@@ -48,8 +48,10 @@
 	</appender>
 
 	<logger name="com.laur" level="${dbt.logging:-INFO}" />
+	<logger name="biz.paluch" level="trace" />
 
 	<root level="WARN">
+		<appender-ref ref="GELF" />
 		<appender-ref ref="STDOUT" />
 		<appender-ref ref="STDERR" />
 	</root>
