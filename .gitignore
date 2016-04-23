@@ -1,0 +1,11 @@
+.classpath
+.project
+target
+.settings
+.DS_Store
+.svn
+*.bak
+*.log
+/catalina.home_IS_UNDEFINED/
+pom.xml.versionsBackup
+dependency-reduced-pom.xml
