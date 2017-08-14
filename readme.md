@@ -1,0 +1,1 @@
+On first run it will create its config file. Subsequent runs will execute the configured select statement. If you don’t like the default configuration file, you can configure it.  Finally, you can enable more logging; however, only INFO and above get logged to graylog.
